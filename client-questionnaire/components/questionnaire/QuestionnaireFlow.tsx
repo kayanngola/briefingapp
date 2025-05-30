@@ -66,7 +66,7 @@ const QuestionnaireFlow: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          {isClient && ( 
+          {isClient && (
             <PDFDownloadLink
               document={<ReportDocument answers={answers} questions={questionnaireData} finalPrice={finalPrice} />}
               fileName="ProjectBrief_Report.pdf"
