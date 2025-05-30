@@ -100,7 +100,7 @@ const ReportDocument: React.FC<ReportDocumentProps> = ({ answers, questions, fin
         <Text style={styles.sectionTitle}>Project Requirements:</Text>
         {questions.map((question) => {
           // Exclude budget question from the main report details if it's only for reference
-          if (question.title === "Estimated Budget") return null; 
+          if (question.title === "Estimated Budget") return null;
 
           const answer = answers[question.id];
           return (
@@ -118,7 +118,7 @@ const ReportDocument: React.FC<ReportDocumentProps> = ({ answers, questions, fin
             Estimated Total Price: ${finalPrice.toFixed(2)}
           </Text>
         </View>
-        
+
         <Text style={styles.footer} fixed>
           Generated on: {new Date().toLocaleDateString()} - This is an automated estimate.
         </Text>
